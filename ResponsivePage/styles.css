@@ -46,18 +46,27 @@
         }
         
         
-        .footer{
-
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-
         /* Media query for screens with a maximum width of 600px */
         @media screen and (max-width: 600px) {
         
-            .img-container {
-                max-width: 100%; /* Make the image take full width on smaller screens */
-                margin-right: 0; /* Remove right margin for better spacing */
-            }
-            header{
-                background-color: #7423238c;
-            }
+           [class*="col-"]{
+            width: 100%;
+           }
+            
         }
+        @media screen and (max-width: 425px) {
+        
+            [class*="col-"]{
+             width: 100%;
+            }
+             
+         }
