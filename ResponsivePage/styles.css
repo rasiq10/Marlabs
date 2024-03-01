@@ -1,0 +1,63 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        header{
+            background-color: #000000;
+            padding: 20px;
+            color: rgb(255, 0, 0);
+            text-align: center;
+        }       
+
+         img {
+            max-width: 100%; 
+            height: auto; 
+        }  
+        
+        .text-container{
+            flex: 1;          
+
+        }
+        
+        .col-9{
+            padding: 10px;
+        }
+        .col-4{
+            padding: 10px;
+        }
+        
+        p{
+            color: black;
+            word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+            overflow: hidden; /* Hide content that exceeds the height of the container */
+            text-overflow: ellipsis; /* Display an ellipsis (...) when text is truncated */
+        }
+        
+        
+        .footer{
+
+        }
+
+        /* Media query for screens with a maximum width of 600px */
+        @media screen and (max-width: 600px) {
+        
+            .img-container {
+                max-width: 100%; /* Make the image take full width on smaller screens */
+                margin-right: 0; /* Remove right margin for better spacing */
+            }
+            header{
+                background-color: #7423238c;
+            }
+        }
